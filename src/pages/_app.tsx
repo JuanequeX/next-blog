@@ -1,6 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Layout from "../pages/components/layout"
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <main className="flex min-hflex min-h-screen flex-col items-center justify-between p-24" >
+        <Component {...pageProps} />
+      </main>
+    </Layout>
+  )
 }

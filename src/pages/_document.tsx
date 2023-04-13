@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <title>Juanequex's Blog</title>
       <body>
         <Main />
         <NextScript />
